@@ -1,0 +1,14 @@
+.header {
+    background-color: #fafbfc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    box-shadow: rgb(0, 0, 0, 0.03) 0 0.46rem 2.18rem, rgb(0, 0, 0, 0.03) 0 0.93rem 1.4rem, rgb(0, 0, 0, 0.05) 0 0.25rem 0.53rem, rgb(0, 0, 0, 0.03) 0 0.12rem 0.18rem;
+    position: sticky;
+}
+
+.logo {
+    width:120px;
+    height: 60px;
+}

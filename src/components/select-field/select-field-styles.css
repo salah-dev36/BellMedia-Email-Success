@@ -1,0 +1,10 @@
+
+.select-block{
+    display: flex;
+    flex-direction: column;
+    font-size:16px;
+    gap:2px;
+}
+.select-field{
+    padding: 0.3em 0;
+}

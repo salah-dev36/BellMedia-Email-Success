@@ -1,0 +1,40 @@
+.form-outer-container{
+    background-color: #fafbfc;
+    padding: 1.25rem;
+    border: 1px solid rgba(0, 14, 27, .125);
+    margin-bottom: 40px;
+}
+
+.title{
+    margin: 0 0 10px 0;
+}
+
+.form-inner-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: minmax(216px, 1.5fr) 4fr;
+    grid-gap: 40px;
+}
+
+.selects-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.submit-button {
+    padding: 0.5rem 0.3rem;
+    letter-spacing: 1px;
+    border: none;
+    outline: none;
+    background-color: #0e66a2;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.submit-button:active {
+    transform: scale(0.98);
+    opacity: 0.9;
+}

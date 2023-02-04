@@ -1,0 +1,10 @@
+
+.input-block{
+    display: flex;
+    flex-direction: column;
+    gap:2px;
+}
+
+.input-field {
+    padding: 0.3em;
+}
