@@ -50,6 +50,9 @@ const Form = ({ setFormFields }) => {
         return parentId.includes(category) && platform.includes(brand);
       });
       setRequests(filteredRequest);
+      setSelectedValues({...selectedValues,request : ""})
+
+
     } else {
       setRequests([]);
     }
@@ -67,6 +70,7 @@ const Form = ({ setFormFields }) => {
         }
       );
       setQuestions(filteredQuestions);
+      setSelectedValues({...selectedValues,checkedBoxes : []})
     } else {
       setQuestions([]);
     }
@@ -84,9 +88,12 @@ const Form = ({ setFormFields }) => {
 
   const onSubmitHandler = (event) => {
     event.preventDefault();
-    if (!brand || !agent)
-      alert("please select all fields before submitting the form");
-    setFormFields(selectedValues);
+    if (!brand || !agent) {
+      alert("please select all fields before submitting the form")
+    } else {
+      setFormFields(selectedValues);
+    }
+
   };
 
   return (
